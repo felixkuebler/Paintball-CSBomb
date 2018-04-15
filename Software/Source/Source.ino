@@ -36,8 +36,8 @@ short int keyword_length = 4;
 String keyword = "";
 
 //countdown constants
-short int countdown_seconds = 0;
-short int countdown_minutes = 5;
+short int countdown_seconds = 15;
+short int countdown_minutes = 1;
 
 
 // initialize lcd
@@ -248,7 +248,7 @@ bool defuseBomb()
         timer = 0;
       }
 
-      if (countdown <= 0)
+      if (countdown <= 20)
       {
         digitalWrite(sig_led, LOW);
         digitalWrite(sig_beeb, LOW);
